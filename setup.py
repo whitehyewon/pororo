@@ -23,14 +23,14 @@ requirements = [
 ]
 
 VERSION = {}  # type: ignore
-with open("pororo/__version__.py", "r",encoding='utf-8') as version_file:
+with open("pororo/__version__.py", "r") as version_file:
     exec(version_file.read(), VERSION)
 
 setup(
     name="pororo",
     version=VERSION["version"],
     description="Pororo: A Deep Learning based Multilingual Natural Language Processing Library",
-    long_description=open("README.md").read(),
+    long_description=open("README.md",encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     classifiers=[
         "Intended Audience :: Developers",
