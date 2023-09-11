@@ -23,7 +23,7 @@ requirements = [
 ]
 
 VERSION = {}  # type: ignore
-with open("pororo/__version__.py", "r") as version_file:
+with open("pororo/__version__.py", "r",encoding='cp949') as version_file:
     exec(version_file.read(), VERSION)
 
 setup(
